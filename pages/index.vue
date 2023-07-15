@@ -1,19 +1,22 @@
 <template>
   <div class="container mx-auto px-4 grid grid-cols-3">
     <div>
-      <h1 class="text-2xl text-blue-400 text-center "> First Section </h1>
+      <sectionone/>
     </div>
     <div>
-      <h1 class="text-2xl text-blue-400 text-center "> Second Section</h1>
+     <sectiontwo/>
     </div>
     <div>
-      <h1 class="text-2xl text-blue-400 text-center ">Third Section</h1>
+      <sectionthree/>
     </div>
   </div>
 </template>
 
 <script>
+import Sectionone from '~/components/Sectionone.vue'
+import Sectiontwo from '~/components/Sectiontwo.vue'
 export default {
+  components: { Sectionone, Sectiontwo },
   name: 'IndexPage'
 }
 </script>
